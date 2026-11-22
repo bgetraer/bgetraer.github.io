@@ -75,9 +75,9 @@ for ((i=0; i<${#pages[@]}; i++)); do
 done
 
 # Copy CSS and Fonts folders into docs/
-cp -r src/css docs/
-cp -r src/fonts docs/
-cp -r src/images docs/
-cp -r $cv_pdf_path docs/
+mkdir -p docs/fonts && cp -R src/fonts/. docs/fonts/
+mkdir -p docs/css && cp -R src/css/. docs/css/
+mkdir -p docs/images && cp -R src/images/. docs/images/
+cp -rf $cv_pdf_path docs/
 
 echo "Build complete!"
