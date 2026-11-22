@@ -6,13 +6,14 @@ build.sh		bash script for compiling src to docs
 src/			source code and data
 	templates/layout.html	shared layout of each page
 	pages/						content for each web page to be made
-	fonts/						font files
+	fonts/						font files (NOTE: Dartmouth fonts are not under permissive license and are not included)
 	css/							style files
 	data/							json and other data files
+	cv/							json data, lua code, and tex code for compiling the CV pdf and site
 docs/			published webpages and directories of supporting files
 
 Overview:
-Each website page follows the structure of templates/layout.html, which contains environmental variables for content which varies by page. The build.sh script loops through each file in src/pages, and outputs a page to docs/ with the layout populated by the appropriate content.
+Each website page follows the structure of templates/layout.html, which contains environmental variables for content which varies by page. The build.sh script compiles the CV, loops through each file in src/pages, and outputs a page to docs/ with the layout populated by the appropriate content.
 
 To publish to local server:
 $ ./build.sh
