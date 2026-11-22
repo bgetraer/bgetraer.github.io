@@ -126,9 +126,13 @@ for _, sec in ipairs(data.sections) do
 	----------------------------------------------------------------
 	elseif sec.id == 'professional' then
 		for _, c in ipairs(sec.data) do
-			row(c.date, lines(
-				text(c.role),
-				text(c.institution) .. ", " .. text(c.location)))
+			row("", "<strong>" .. text(c.role) .. "</strong>, " .. text(c.institution))
+			for _, p in ipairs(c.periods) do
+				row(p.date, text(p.location))
+				if has(p.description) then
+					row("", '<span class="cv-desc">' .. text(p.description) .. '</span>')
+				end
+			end
 		end
 
 	----------------------------------------------------------------
