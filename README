@@ -1,0 +1,20 @@
+Personal website for Benjamin Getraer
+
+Contents:
+README		this file
+build.sh		bash script for compiling src to docs
+src/			source code and data
+	templates/layout.html	shared layout of each page
+	pages/						content for each web page to be made
+	fonts/						font files
+	css/							style files
+	data/							json and other data files
+docs/			published webpages and directories of supporting files
+
+Overview:
+Each website page follows the structure of templates/layout.html, which contains environmental variables for content which varies by page. The build.sh script loops through each file in src/pages, and outputs a page to docs/ with the layout populated by the appropriate content.
+
+To publish to local server:
+$ ./build.sh
+$ python3 -m http.server 8000
+Open http://localhost:8000/index.html in browser

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>Contact</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Personal website of Benjamin Getraer">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/cv.css">
+	</head>
+	<body>
+		<header class="site-header">
+			<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+			<nav id="site-nav">
+				<ul class="nav-links">
+<li><a class="inactive" href="index.html">Home</a></li>
+<li><a class="inactive" href="research.html">Research</a></li>
+<li><a class="inactive" href="cv.html">CV</a></li>
+<li><a class="active" href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main class="page">
+<!-- PAGE CONTENT -->
+<section>
+  <h2>Contact</h2>
+  <p>I am currently seeking postdoctorate opportunities, and would love to be in touch.</p>
+  <p><a href="mailto:benjamin.p.getraer.gr@dartmouth.edu">benjamin.p.getraer.gr (at) dartmouth.edu</a></p>
+</section>
+<figure>
+    <img class="full-photo" src="images/nizina_lake.jpg" alt="Portrait">
+    <figcaption class="photo-caption">
+		 Headwaters of the Nizina River.<br> 
+		 Wrangell Mountains, Alaska, June 2026
+    </figcaption>
+</figure>
+<!-- PAGE CONTENT -->
+		</main>
+
+		<footer class="site-footer">
+			<p>Copyright 2026 Benjamin Getraer</p>
+			<p>BellTopo Sans font designed by 
+				<a href="https://www.sarahbellmaps.com">Sarah Bell</a>
+			</p>
+		</footer>
+		<script>
+			const toggle = document.querySelector('.nav-toggle');
+			const nav = document.getElementById('site-nav');
+			toggle.addEventListener('click', () => {
+				const open = nav.classList.toggle('open');
+				toggle.setAttribute('aria-expanded', open);
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>$PAGE_TITLE</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Personal website of Benjamin Getraer">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/cv.css">
+	</head>
+	<body>
+		<header class="site-header">
+			<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+			<nav id="site-nav">
+				<ul class="nav-links">
+$NAV_LINKS
+				</ul>
+			</nav>
+		</header>
+
+		<main class="page">
+<!-- PAGE CONTENT -->
+$PAGE_CONTENT
+<!-- PAGE CONTENT -->
+		</main>
+
+		<footer class="site-footer">
+			<p>Copyright $CURRENT_YEAR Benjamin Getraer</p>
+			<p>BellTopo Sans font designed by 
+				<a href="https://www.sarahbellmaps.com">Sarah Bell</a>
+			</p>
+		</footer>
+		<script>
+			const toggle = document.querySelector('.nav-toggle');
+			const nav = document.getElementById('site-nav');
+			toggle.addEventListener('click', () => {
+				const open = nav.classList.toggle('open');
+				toggle.setAttribute('aria-expanded', open);
+			});
+		</script>
+	</body>
+</html>
