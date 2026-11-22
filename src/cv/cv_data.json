@@ -32,39 +32,6 @@
 			]
 		},
 		{
-			"id": "professional",
-			"heading": "Professional Experience",
-			"data": [
-				{
-					"role": "Camps Caretaker",
-					"institution": "Randolph Mountain Club",
-					"periods": [
-						{
-							"date": "2019 -- 2021",
-							"location": "White Mountain National Forest, NH",
-							"description": "Fall/winter seasonal; staffed and maintained off-grid public facility in sub-alpine environment in the White Mountain National Forest; volunteer search and rescue; recorded daily weather and snowpack observations."
-						}
-					]
-				},
-				{
-					"role": "Wilderness Ranger",
-					"institution": "United States Forest Service",
-					"periods": [
-						{
-							"date": "2020",
-							"location": "San Juan National Forest, Bayfield, CO",
-							"description": "Summer seasonal; patrolled and cleared trails in the Weminuche Wilderness and Hermosa Creek Wilderness."
-						},
-						{
-							"date": "2019",
-							"location": "Salmon--Challis National Forest, Challis, ID",
-							"description": "Summer seasonal; operated remote guard stations and whitewater river launch sites on the Frank Church--River of No Return Wilderness."
-						}
-					]
-				}
-			]
-		},
-		{
 			"id": "publications",
 			"heading": "Publications",
 			"data": [
@@ -233,32 +200,53 @@
 			]
 		},
 		{
-			"id": "teaching",
-			"heading": "Teaching",
+			"id": "awards",
+			"heading": "Awards and Honors",
 			"data": [
 				{
-					"date": "Winter, 2025",
-					"course_number": "EARS 070/170",
-					"school": "Dartmouth College",
-					"course_title": "Glaciology",
-					"role": "teaching assistant",
-					"description": "Introduction to glaciology at undergraduate (070) and graduate (170) level, including guest lecture on glacial geology."
+					"date": "2026",
+					"description": "Best Oral Presentation, Northeast Glaciology Meeting"
 				},
 				{
-					"date": "Fall, 2023",
-					"course_number": "EARS 045/046/047",
-					"school": "Dartmouth College",
-					"course_title": "The Stretch",
-					"role": "teaching assistant",
-					"description": "Off-campus field program, covering glaciology on the Columbia Icefield, Alberta, and structural geology and Earth history in the Sawtooth Range, Montana, and Bighorn Basin, Wyoming."
+					"date": "2019", 
+					"description": "Department Book Award, outstanding research ability and clear writing in the senior thesis"
 				},
 				{
-					"date": "Spring, 2023",
-					"course_number": "WRI 120",
-					"school": "Princeton University",
-					"course_title": "Ages of Memory",
-					"role": "guest lecturer",
-					"description": "Guest lecturer for a freshman year writing course, presenting an introduction to glaciers and ice sheets and leading a discussion of their relationship to Earth history and memory."
+					"date": "2019",
+					"description": "Nomination to the Princeton chapter of the Sigma Xi honor society"
+				}
+			]
+		},
+		{
+			"id": "professional",
+			"heading": "Professional Experience",
+			"data": [
+				{
+					"role": "Camps Caretaker",
+					"institution": "Randolph Mountain Club",
+					"periods": [
+						{
+							"date": "2019 -- 2021",
+							"location": "White Mountain National Forest, NH",
+							"description": "Fall/winter seasonal; staffed and maintained off-grid public facility in sub-alpine environment in the White Mountain National Forest; volunteer search and rescue; recorded daily weather and snowpack observations."
+						}
+					]
+				},
+				{
+					"role": "Wilderness Ranger",
+					"institution": "United States Forest Service",
+					"periods": [
+						{
+							"date": "2020",
+							"location": "San Juan National Forest, Bayfield, CO",
+							"description": "Summer seasonal; patrolled and cleared trails in the Weminuche Wilderness and Hermosa Creek Wilderness."
+						},
+						{
+							"date": "2019",
+							"location": "Salmon--Challis National Forest, Challis, ID",
+							"description": "Summer seasonal; operated remote guard stations and whitewater river launch sites on the Frank Church--River of No Return Wilderness."
+						}
+					]
 				}
 			]
 		},
@@ -313,6 +301,36 @@
 					"location": "Colorado Plateau, Utah, USA",
 					"length": "1 week",
 					"description": "Field observations of modern climate change at multiple field sites in riparian, desert, and alpine environments."
+				}
+			]
+		},
+		{
+			"id": "teaching",
+			"heading": "Teaching",
+			"data": [
+				{
+					"date": "Winter, 2025",
+					"course_number": "EARS 070/170",
+					"school": "Dartmouth College",
+					"course_title": "Glaciology",
+					"role": "teaching assistant",
+					"description": "Introduction to glaciology at undergraduate (070) and graduate (170) level, including guest lecture on glacial geology."
+				},
+				{
+					"date": "Fall, 2023",
+					"course_number": "EARS 045/046/047",
+					"school": "Dartmouth College",
+					"course_title": "The Stretch",
+					"role": "teaching assistant",
+					"description": "Off-campus field program, covering glaciology on the Columbia Icefield, Alberta, and structural geology and Earth history in the Sawtooth Range, Montana, and Bighorn Basin, Wyoming."
+				},
+				{
+					"date": "Spring, 2023",
+					"course_number": "WRI 120",
+					"school": "Princeton University",
+					"course_title": "Ages of Memory",
+					"role": "guest lecturer",
+					"description": "Guest lecturer for a freshman year writing course, presenting an introduction to glaciers and ice sheets and leading a discussion of their relationship to Earth history and memory."
 				}
 			]
 		},
@@ -377,24 +395,6 @@
 					"date": "2023 -- 2024",
 					"role": "Graduate–faculty representative",
 					"organization": "EAPS department, Dartmouth College"
-				}
-			]
-		},
-		{
-			"id": "awards",
-			"heading": "Awards and Honors",
-			"data": [
-				{
-					"date": "2026",
-					"description": "Best Oral Presentation, Northeast Glaciology Meeting"
-				},
-				{
-					"date": "2019", 
-					"description": "Department Book Award, outstanding research ability and clear writing in the senior thesis"
-				},
-				{
-					"date": "2019",
-					"description": "Nomination to the Princeton chapter of the Sigma Xi honor society"
 				}
 			]
 		}

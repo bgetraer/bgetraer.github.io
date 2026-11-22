@@ -63,17 +63,33 @@ end
 -- author list with my name in bold (e.g. "Getraer, B.")
 local parts = data.bio.name:split(" ")
 local myName = parts[#parts] .. ", " .. parts[1]:sub(1, 1) .. "."
-local function authors(s)
-	local result, pos = {}, 1
-	while true do
-		local a, b = s:find(myName, pos, true)   -- plain-text search
-		if not a then break end
-		result[#result + 1] = text(s:sub(pos, a - 1))
-		result[#result + 1] = "<strong>" .. text(myName) .. "</strong>"
-		pos = b + 1
+-- list: array of "Last, I." names. max: optional cutoff (nil = show everyone)
+local function authors(list)
+	local names = {}
+	local meShown, meInList = false, false
+	for i, a in ipairs(list) do
+		if a == myName then meInList = true end
+		if not cut or i <= max then
+			names[#names + 1] = a
+			if a == myName then meShown = true end
+		end
 	end
-	result[#result + 1] = text(s:sub(pos))
-	return table.concat(result)
+
+	local function name(a)
+		if a == myName then return "<strong>" .. text(a) .. "</strong>" end
+		return text(a)
+	end
+
+	local s = ""
+	for i, a in ipairs(names) do
+		if i > 1 then
+			if #names == 2 then s = s .. " and "
+			elseif i == #names then s = s .. ", and "
+			else s = s .. ", " end
+		end
+		s = s .. name(a)
+	end
+	return s
 end
 
 ----------------------------------------------------------------
