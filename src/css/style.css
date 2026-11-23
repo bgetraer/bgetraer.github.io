@@ -126,6 +126,28 @@ main {
 	}
 }
 
+a[href] {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: #aaa;
+    text-underline-offset: 3px;
+}
+
+a[href]:hover {
+    color: #aaa;
+    text-decoration-color: #aaa;
+}
+
+@media (hover: hover) {
+    a[href]:hover {
+        color: #aaa;
+        text-decoration-color: #aaa;
+    }
+   .nav-links a[href]:hover {
+      color: #5eb87b;
+   }
+}
+
 .nav-links {
 	display: flex;
 	list-style: none;
@@ -145,15 +167,10 @@ main {
 	transition: color 0.2s ease;
 }
 
-.nav-links a.active {
-	color: #5eb87b;
+.nav-links a[href].active {
+   color: #5eb87b;
 }
 
-@media (hover: hover) {
-	.nav-links a:hover {
-		color: #5eb87b;
-	}
-}
 
 .full-photo {
 	width: 100%;
@@ -167,18 +184,4 @@ main {
 	text-align: right;
 	margin-top: 0.5rem;
 	letter-spacing: 0.02em;
-}
-
-a[href^="mailto:"],
-a[href^="http"] {
-	color: inherit;
-	text-decoration: underline;
-	text-decoration-color: #aaa;
-	text-underline-offset: 3px;
-}
-
-a[href^="mailto:"]:hover,
-a[href^="http"]:hover {
-	color: #aaa;
-	text-decoration-color: #aaa;
 }

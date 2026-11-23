@@ -18,6 +18,8 @@ f:close()
 local out = {}
 local function add(s) out[#out + 1] = s end
 
+local pdf_file = "cv_bgetraer.pdf"
+
 ----------------------------------------------------------------
 -- Helpers
 ----------------------------------------------------------------
@@ -107,7 +109,6 @@ end
 -- Page header
 ----------------------------------------------------------------
 local b = data.bio
-add('<div class="cv">')
 -- add('<header class="cv-header">')
 -- add('<div class="cv-name">' .. text(b.name) .. '</div>')
 -- add('<p>' .. text(b.department) .. ' | ' .. text(b.institution) .. '<br>'
@@ -115,6 +116,13 @@ add('<div class="cv">')
 -- 	.. '<a href="mailto:' .. esc(b.email) .. '">' .. text(b.email) .. '</a> | '
 -- 	.. link(b.website_link, b.website_text) .. '</p>')
 -- add('</header>')
+
+add('<section>' .. 
+ 	'<h2>Curriculum Vitae</h2>' ..
+ 	'<p>A .PDF version can be viewed <a href="cv_bgetraer.pdf">here</a>.</p>' ..
+ 	'</section>')
+
+add('<div class="cv">')
 
 ----------------------------------------------------------------
 -- Sections, in the order they appear in the JSON
