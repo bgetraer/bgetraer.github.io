@@ -9,7 +9,7 @@ tmp_dir="src/tmp"
 tmp_navlink="src/tmp/navlink_tmp.html"
 output_dir="docs"
 cv_dir="../cv"
-cv_pdf_path="${cv_dir}/output/latex/cv_bgetraer.pdf"
+cv_pdf_path="${cv_dir}/output/latex/short_cv_bgetraer.pdf"
 cv_html_path="${cv_dir}/output/html/cv.html"
 
 # define pages
