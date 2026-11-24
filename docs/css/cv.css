@@ -66,7 +66,7 @@
 	overflow-wrap: anywhere;
 }
 .cv table.cv-table tr { background: none; border: 0; }
-.cv .cv-desc { font-size: .9rem; font-style: italic; color: var(--cv-muted); }
+.cv .cv-desc { font-size: 1.2rem; font-style: italic; color: var(--cv-muted); }
 
 /* numbered publications, counting down */
 .cv ol.cv-pubs { margin: 0 0 1rem; padding-left: 2.2rem; }
