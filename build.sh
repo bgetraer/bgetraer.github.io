@@ -8,8 +8,9 @@ navlink_file="src/templates/nav-link.html"
 tmp_dir="src/tmp"
 tmp_navlink="src/tmp/navlink_tmp.html"
 output_dir="docs"
-cv_dir="src/cv"
-cv_pdf_path="src/cv/output/cv_bgetraer.pdf"
+cv_dir="../cv"
+cv_pdf_path="${cv_dir}/output/latex/cv_bgetraer.pdf"
+cv_html_path="${cv_dir}/output/html/cv.html"
 
 # define pages
 pages=(index.html
@@ -32,15 +33,10 @@ export CURRENT_YEAR=$(date +%Y)
 
 # Compile CV pdf
 cd $cv_dir
-echo -n "Compiling cv in lualatex..."
-./cv_compile.sh > output/cv_compile.log
-echo " Done"
+./cv_compile.sh
+cp $cv_html_path $page_dir
 cd $root_dir
 
-# Compile CV HTML
-echo -n "Parsing cv to html..."
-luatex $cv_dir/cv_html.lua $cv_dir/cv_data.json > $page_dir/cv.html
-echo " Done"
 
 # Compile each page into output directory
 for ((i=0; i<${#pages[@]}; i++)); do
